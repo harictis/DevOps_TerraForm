@@ -50,7 +50,7 @@ Install Terraform from the new repository.
     Connecting to RDS.
 ## Creating a VM in a Public Subnet
    save this script in #provider.tf
-   ![Screenshot 2023-09-15 112749](https://github.com/harictis/DevOps_Terraform/assets/95492691/9d0b633f-b22e-4500-9d85-b1f8c541205d)
+  ![Screenshot 2023-09-15 112749](https://github.com/harictis/DevOps_TerraForm/assets/95492691/9a938754-e6f8-47ec-a760-89bd4fc650b3)
 
 ## For VPC
     $#vpc
@@ -100,8 +100,8 @@ Install Terraform from the new repository.
         Name = "upgrad-private-2"
       }
     }
+![Screenshot 2023-09-15 113641](https://github.com/harictis/DevOps_TerraForm/assets/95492691/e293d58c-ef4f-406e-91f4-a34302720686)
 
-![Screenshot 2023-09-15 113641](https://github.com/harictis/DevOps_Terraform/assets/95492691/669a1a7a-3fb1-4f63-971d-2fe8a395783a)
 
 ## Internet Gateway
 
@@ -215,34 +215,37 @@ For creating IGW (Internet Gate Way), EIP (Elastic IP), NAT Gateway (Network Add
 Compile the script using 
 
       $terraform Plan
-![Screenshot 2023-09-06 184923](https://github.com/harictis/DevOps_TerraForm/assets/95492691/ba70577e-2892-4436-8361-bd8df8db63d3)
+![Screenshot 2023-09-15 123023](https://github.com/harictis/DevOps_TerraForm/assets/95492691/9333d98c-121f-4557-ab48-e7721b27759f)
 
 
-![Screenshot 2023-09-15 123043](https://github.com/harictis/DevOps_Terraform/assets/95492691/fa64463e-2f37-4008-9540-cba6b9c1ec4d)
+![Screenshot 2023-09-15 123043](https://github.com/harictis/DevOps_TerraForm/assets/95492691/3bafae6d-6251-4e7e-b63f-3596200a7be3)
 
 ## Terraform Apply
   Run the script template to deploy resources
 
      $terraform apply
+![Screenshot 2023-09-15 123139](https://github.com/harictis/DevOps_TerraForm/assets/95492691/7b179478-b162-44eb-8281-4a36b3a307be)
 
+![Screenshot 2023-09-15 123222](https://github.com/harictis/DevOps_TerraForm/assets/95492691/9a66d7f3-b473-4287-84b4-cf55dc359ed0)
 
-![Screenshot 2023-09-15 123139](https://github.com/harictis/DevOps_Terraform/assets/95492691/7132ba23-af14-4531-9025-5ca8c2e55222)
-![Screenshot 2023-09-15 123222](https://github.com/harictis/DevOps_Terraform/assets/95492691/e1e3726d-99cc-4676-938d-542b2a3b704a)
-![Screenshot 2023-09-15 124048](https://github.com/harictis/DevOps_Terraform/assets/95492691/44fb94d9-3e89-43d8-8950-7e9cf2819469)
-![Screenshot 2023-09-15 124124](https://github.com/harictis/DevOps_Terraform/assets/95492691/bfc42c9c-7103-48b6-ab2f-613bc63dd37b)
+![Screenshot 2023-09-15 123915](https://github.com/harictis/DevOps_TerraForm/assets/95492691/4570aa25-2ba5-4c19-a9d5-020e96f27bf0)
+![Screenshot 2023-09-15 124048](https://github.com/harictis/DevOps_TerraForm/assets/95492691/a6700576-eb93-46bc-ab78-6f543255263a)
+![Screenshot 2023-09-15 124124](https://github.com/harictis/DevOps_TerraForm/assets/95492691/c802b884-11ac-48b9-937c-57442428f07e)
+
 
 # Check the Resources
-![Screenshot 2023-09-15 131121](https://github.com/harictis/DevOps_Terraform/assets/95492691/d0cd0156-fc21-4080-bb6f-28f598da0b9d)
+![Screenshot 2023-09-15 131121](https://github.com/harictis/DevOps_TerraForm/assets/95492691/23cffc24-4bd5-4636-9bbb-d9657dfb7972)
+![Screenshot 2023-09-15 131211](https://github.com/harictis/DevOps_TerraForm/assets/95492691/e3643716-6277-4199-b9a7-f759ea465a5f)
+![Screenshot 2023-09-15 131445](https://github.com/harictis/DevOps_TerraForm/assets/95492691/1999015c-229d-4bb1-afc7-2b03de5d562f)
 
-![Screenshot 2023-09-15 131211](https://github.com/harictis/DevOps_Terraform/assets/95492691/830ba4a6-23ba-44b5-b099-c3a1011be4a5)
-![Screenshot 2023-09-15 131445](https://github.com/harictis/DevOps_Terraform/assets/95492691/b152d56b-651f-47a7-be2f-6bfa3ebe794a)
 
 # Docker in EC2
  Initializing the docker engine in EC2 instance
+![Screenshot 2023-09-15 160042](https://github.com/harictis/DevOps_TerraForm/assets/95492691/d74f11be-1f08-4c2a-bef1-95aff6eb310f)
 
- ![Screenshot 2023-09-15 160042](https://github.com/harictis/DevOps_Terraform/assets/95492691/8bab85cf-00c2-441c-903c-5a59f4d05f9a)
+ ![Screenshot 2023-09-15 160504](https://github.com/harictis/DevOps_TerraForm/assets/95492691/0bde52b9-f4aa-4522-9ad5-c4024a0806ab)
 
-![Screenshot 2023-09-15 160504](https://github.com/harictis/DevOps_Terraform/assets/95492691/8a6034a2-10cd-41cc-a641-a80ea46d6190)
+
 
        $DockerFile
        
@@ -264,22 +267,25 @@ PHP DockerFile
         RUN docker-php-ext-install mysqli pdo pdo_mysql
         
         WORKDIR /var/www/html
-![Screenshot 2023-09-15 160645](https://github.com/harictis/DevOps_Terraform/assets/95492691/d778bb30-3e77-42b6-a759-7acb0e673623)
-![Screenshot 2023-09-15 171128](https://github.com/harictis/DevOps_Terraform/assets/95492691/2ccffe35-a139-491b-ab4a-0297c2a31e13)
-![Screenshot 2023-09-15 171227](https://github.com/harictis/DevOps_Terraform/assets/95492691/a1de18fa-6097-4857-a781-838c74741b87)
+![Screenshot 2023-09-15 160645](https://github.com/harictis/DevOps_TerraForm/assets/95492691/e9840369-1a52-476b-a4d5-0f6226b19885)
+![Screenshot 2023-09-15 171128](https://github.com/harictis/DevOps_TerraForm/assets/95492691/b19f25ec-e12d-4033-b6c5-bf307f4eb9c1)
+![Screenshot 2023-09-15 171227](https://github.com/harictis/DevOps_TerraForm/assets/95492691/f6196d7b-dc1c-4482-84a7-010961436f33)
+
 # Check the Docker Hub
 
-![Screenshot 2023-09-15 171414](https://github.com/harictis/DevOps_Terraform/assets/95492691/f7fb6409-7bff-4840-9084-eaff4cb1b43d)
+![Screenshot 2023-09-15 171414](https://github.com/harictis/DevOps_TerraForm/assets/95492691/8dd5b878-3704-4638-b829-3105943e3eda)
+
 
 # Configure the Wordpress
 Install the wordpress and configure it
+![WhatsApp Image 2023-09-15 at 3 58 50 PM(3)](https://github.com/harictis/DevOps_TerraForm/assets/95492691/445492e5-ac5a-4e82-bc2b-b6fe50542af2)
+![WhatsApp Image 2023-09-15 at 3 58 50 PM(2)](https://github.com/harictis/DevOps_TerraForm/assets/95492691/c3b59265-c4b4-4615-8e1d-5682e483d049)
+![WhatsApp Image 2023-09-15 at 3 58 50 PM(1)](https://github.com/harictis/DevOps_TerraForm/assets/95492691/d13122a7-4172-4054-bd45-941b6b02791c)
+![WhatsApp Image 2023-09-15 at 3 58 50 PM](https://github.com/harictis/DevOps_TerraForm/assets/95492691/ebf31f40-556f-419f-a60d-5bed409c3114)
+![WhatsApp Image 2023-09-15 at 3 58 49 PM(1)](https://github.com/harictis/DevOps_TerraForm/assets/95492691/b6f93a9f-4d09-4370-a59f-67a3d7006db2)
 
-![WhatsApp Image 2023-09-15 at 3 58 50 PM(3)](https://github.com/harictis/DevOps_Terraform/assets/95492691/47469e2f-7307-40a4-abef-c93fb1538695)
-![WhatsApp Image 2023-09-15 at 3 58 50 PM(2)](https://github.com/harictis/DevOps_Terraform/assets/95492691/6a7bd9c1-6dca-4adb-9c06-469edbd7123f)
-![WhatsApp Image 2023-09-15 at 3 58 50 PM(1)](https://github.com/harictis/DevOps_Terraform/assets/95492691/12bf39e4-5236-4375-89a6-e67b8c918e5b)
-![WhatsApp Image 2023-09-15 at 3 58 50 PM](https://github.com/harictis/DevOps_Terraform/assets/95492691/8f467648-b407-44e1-b00c-9bdd14e4db6b)
-![WhatsApp Image 2023-09-15 at 3 58 49 PM(1)](https://github.com/harictis/DevOps_Terraform/assets/95492691/8d3c1d1e-3cc8-4cba-b3f6-c1e4c1e376da)
+
 # HOOREY!!
-![WhatsApp Image 2023-09-15 at 3 58 49 PM](https://github.com/harictis/DevOps_Terraform/assets/95492691/95831325-15e5-499f-a091-fa1a70ce1474)
+![WhatsApp Image 2023-09-15 at 3 58 49 PM](https://github.com/harictis/DevOps_TerraForm/assets/95492691/ddf4e45c-4573-45a8-9476-3ae9dbec6fe7)
 
 # THANK YOU
