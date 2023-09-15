@@ -211,13 +211,14 @@ For creating IGW (Internet Gate Way), EIP (Elastic IP), NAT Gateway (Network Add
         Name = "allow_ssh"
       }
     }
- # EC2 & RDS
+    
+# EC2 & RDS
 
       #EC2
       resource "aws_instance" "wordpress" {
         ami                         = "ami-053b0d53c279acc90"
         instance_type               = "t2.micro"
-        key_name                    = "pem"
+        key_name                    = "task3-key"
         subnet_id                   = aws_subnet.public1.id
         security_groups             = [aws_security_group.allow_ssh.id]
         associate_public_ip_address = true
@@ -239,8 +240,8 @@ For creating IGW (Internet Gate Way), EIP (Elastic IP), NAT Gateway (Network Add
         allocated_storage         = 20
         identifier                = "my-rds-instance"
         db_name                   = "wordpress_db"
-        username                  = "mani"
-        password                  = "mani123$"
+        username                  = "hariharasudhan"
+        password                  = "12345"
         db_subnet_group_name      = aws_db_subnet_group.rds_subnet_group.name
         vpc_security_group_ids    = [aws_security_group.rds_security_group.id]
       
